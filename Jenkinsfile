@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'checkout(scm)'
+        sh 'mvn clean'
       }
     }
   }
